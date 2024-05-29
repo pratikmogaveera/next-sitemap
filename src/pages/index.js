@@ -9,7 +9,6 @@ export default function Home() {
             <h1 className="text-3xl font-bold">Home</h1>
             <div className="flex gap-4">
                 <Button href={"/about"} >About</Button>
-                <Button href={"/about2"} >About2</Button>
                 <Button href={"/contact"} >Contact</Button>
                 <Button href={"/nested"} >Nested</Button>
                 <Button href={"/product"} >Product</Button>
