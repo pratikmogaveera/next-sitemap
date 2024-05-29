@@ -8,8 +8,8 @@ export default function Nested() {
                 <Button href={"/nested/level-one"}>
                     Level One
                 </Button>
-                <Button href={"/nested/level-two"}>
-                    Level Two
+                <Button href={"/nested/level-one-two"}>
+                    Level One 2
                 </Button>
             </div>
         </main>
