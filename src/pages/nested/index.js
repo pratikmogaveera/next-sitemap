@@ -1,8 +1,32 @@
 import Button from "@/components/Button";
+import Wrapper from "@/components/utils/Wrapper";
+import {
+    Breadcrumb,
+    BreadcrumbItem,
+    BreadcrumbLink,
+    BreadcrumbList,
+    BreadcrumbPage,
+    BreadcrumbSeparator,
+} from "@/components/ui/breadcrumb"
+
+const BCrumb = () => {
+    return (
+        <Breadcrumb>
+            <BreadcrumbList>
+                <BreadcrumbItem>
+                    <BreadcrumbLink href="/">Home</BreadcrumbLink>
+                </BreadcrumbItem>
+                <BreadcrumbSeparator />
+                <BreadcrumbItem>
+                    <BreadcrumbPage>Nested</BreadcrumbPage>
+                </BreadcrumbItem>
+            </BreadcrumbList>
+        </Breadcrumb>)
+}
 
 export default function Nested() {
     return (
-        <main className='flex min-h-screen flex-col items-center justify-center gap-4 p-24'>
+        <Wrapper>
             <h1 className="text-3xl font-bold">Nested</h1>
             <div className="flex gap-4">
                 <Button href={"/nested/level-one"}>
@@ -12,6 +36,10 @@ export default function Nested() {
                     Level One 2
                 </Button>
             </div>
-        </main>
+
+            <div className="absolute top-12 left-4">
+                <BCrumb />
+            </div>
+        </Wrapper>
     )
 }
