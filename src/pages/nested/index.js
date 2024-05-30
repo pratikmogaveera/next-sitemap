@@ -8,6 +8,7 @@ import {
     BreadcrumbPage,
     BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb"
+import Head from "next/head";
 
 const BCrumb = () => {
     return (
@@ -27,6 +28,11 @@ const BCrumb = () => {
 export default function Nested() {
     return (
         <Wrapper>
+            <Head>
+                <title>Next-Sitemap: Nested</title>
+                <meta name="description" content="Nested page" />
+            </Head>
+
             <h1 className="text-3xl font-bold">Nested</h1>
             <div className="flex gap-4">
                 <Button href={"/nested/level-one"}>

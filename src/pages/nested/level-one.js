@@ -7,6 +7,7 @@ import {
     BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb"
 import Wrapper from "@/components/utils/Wrapper"
+import Head from "next/head"
 
 const BCrumb = () => {
     return (
@@ -29,6 +30,11 @@ const BCrumb = () => {
 export default function LevelOne() {
     return (
         <Wrapper>
+            <Head>
+                <title>Next-Sitemap: Level One</title>
+                <meta name="description" content="Level One page" />
+            </Head>
+
             <h1 className="text-3xl font-bold">Level One</h1>
 
             <div className="absolute top-12 left-4">
